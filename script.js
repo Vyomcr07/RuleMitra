@@ -17,7 +17,7 @@ function sendMessage() {
     appendMessage('You', userMessage);
 
     // Send the user message to the backend
-    fetch('http://127.0.0.1:5000/predict', {
+    fetch('https://rulemitrabackend.onrender.com/predict', {
         method: 'POST',
         mode: 'cors',
         headers: {
